@@ -1,0 +1,450 @@
+body {
+    background-color: rgba(47, 56, 64, 1);
+}
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 40px 80px;
+}
+/* Hedaer */
+.header {
+    color: white;
+    font-family: monospace;
+    padding: 20px 40px
+}
+.header #navbar #logo {
+    font-size: 32px;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links {
+    list-style: none;
+    display: flex;
+    gap: 23px;
+    padding: 0;
+    margin: 0;
+}
+#nav-links li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+#nav-links li a:hover {
+    border: none;
+    box-shadow: 0px 1px  black;
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        flex-direction: column;
+    }
+
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header .introduction h1 {
+    color: white;
+    font-size: 56px;
+    font-family: monospace;
+}
+.last-name {
+    display: block;
+}
+.header .introduction p {
+    color: white;
+    font-size: 20px;
+
+}
+#profile {
+    /* pfp */
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 0px;
+    border-radius: 30%;
+}
+.header button {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: rgba(84, 102, 109, 1);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 10px 20px 0px 0px
+}
+.header button:hover {
+    background-color: rgb(70, 84, 90);
+    transition: .5s ease;
+    box-shadow: 0 3px 10px black;
+}
+
+
+
+/* Body */
+.main {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    background-color: rgba(84, 102, 109, 1);
+    overflow: visible;
+}
+.main h1 {
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+.main p { 
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    margin: 0px 0px 20px 0px;
+
+}
+.main .aboutme {
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.whatido {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.categories {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /*flex-wrap: wrap helps with small screen behavior.*/
+    gap: 20px;
+    padding: 10px 30px 30px 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.cat {
+    flex-grow: 2;
+    width: 100px;
+    background-color: rgba(142, 161, 169, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: flex-grow 0.5s ease, transform .5s ease;
+}
+.cat img {
+    height: 40px;
+    justify-content: baseline;
+    
+}
+/* Default state */
+#c1, #c3 {
+    flex-grow: 1;
+}
+#c2 {
+    flex-grow: 2.5;
+    transform: scaleY(1.20);
+}
+#c2 h2 {
+    font-size: 35px;
+}
+#c2 p {
+    font-size: 17px;
+}
+/* Hover effect: LEFT */
+#c1:hover {
+    transition: 0.3 ease;
+    flex-grow: 2.5;
+    transform: scaleY(1.20);
+}
+#c1:hover h2 {
+    transition: 0.3 ease;
+    font-size: 35px;
+}
+#c1:hover p {
+    transition: 0.3 ease;
+    font-size: 17px;
+}
+#c1:hover ~ #c2,
+#c1:hover ~ #c3 {
+    flex-grow: 1;
+    transform: scaleY(1.0);
+}
+/* Hover effect: RIGHT */
+#c3:hover {
+    flex-grow: 2.5;
+    transform: scaleY(1.20);
+}
+#c3:hover h2 {
+    transition: 0.3 ease;
+    font-size: 35px;
+}
+#c3:hover p {
+    transition: 0.3 ease;
+    font-size: 17px;
+}
+.categories:hover #c1:not(:hover),
+.categories:hover #c2:not(:hover),
+.categories:hover #c3:not(:hover) {
+    transition: 0.3 ease;
+    flex-grow: 1;
+    transform: scaleY(1.0);
+}
+.categories:hover #c1:not(:hover) h2,
+.categories:hover #c2:not(:hover) h2,
+.categories:hover #c3:not(:hover) h2 {
+    transition: 0.3 ease;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.categories:hover #c1:not(:hover) p,
+.categories:hover #c2:not(:hover) p,
+.categories:hover #c3:not(:hover) p {
+    transition: 0.3 ease;
+    font-size: 12px;
+}
+/* Hover on middle (does nothing visually, remains default) */
+#c2:hover {
+    transition: 0.3 ease;
+    flex-grow: 2.5;
+    transform: scaleY(1.20);
+}
+
+.cat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title-row img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.title-row h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+.cat-content p {
+    font-size: 12px;
+    color: white;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+
+
+/* For small screens: stacked layout and shadow on hover */
+@media screen and (max-width: 768px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .cat {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: none;
+    transform: none !important;
+    flex-grow: 0 !important;
+    transition: box-shadow 0.3s ease;
+    font-size: 16px !important;
+  }
+
+  .cat:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .cat h2,
+  .cat p {
+    font-size: 16px !important;
+    transition: none !important;
+  }
+
+  /* Remove any residual hover-based scaling/transform/flex changes */
+  .categories:hover .cat,
+  .categories:hover .cat:hover {
+    transform: none !important;
+    flex-grow: 0 !important;
+  }
+
+  .categories:hover .cat h2,
+  .categories:hover .cat p {
+    font-size: 16px !important;
+  }
+}
+
+
+.skills {
+  text-align: center;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.skill-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  --bar-height: 80px;
+}
+
+/* Proficiency bar container (horizontal) */
+.proficiency-bar {
+  position: relative;
+  width: 80px;                 /* total width of bar */
+  height: 12px;                /* height of bar */
+  background-color: #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Inner green fill from left to right */
+.proficiency-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(var(--level) * 10%);
+  background-color: #00ff91;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.4s ease;
+}
+
+.skill-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.skill-list h2 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+}
+
+
+
+/* Projects */
+.projects {
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+.project-card {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 180px;
+    background-color: rgba(142, 161, 169, 1);
+    margin: 0px 20px 20px 0px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.project-title {
+    font-size: 20px;
+    font: monospace;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(84, 102, 109, 1);
+    align-items: center;
+    justify-content: center;
+}
+.project-description {
+    font-size: 14px;
+}
+
+
+/* Footer */
+.footer {
+    color: white;
+    padding: 20px 40px;
+}
+.footer #contactme {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+.footer #contactme p {
+    font-size: 16px;
+    text-align: left;
+}
+.footer #contactme ul {
+    font-size: 16px;
+    list-style-type: disc;
+    text-align: left;
+    margin: 10px 30px;
+}
+
+#contactme img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:10px;
+    background-color: white;
+
+}

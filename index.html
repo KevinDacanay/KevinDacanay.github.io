@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Dacanay | Portfolio</title>
+
+    <!-- Tailwind CDN for quick utility usage -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-900 font-sans">
+    <!-- Header and Navigation -->
+    <section class="header">
+        <div id="navbar">
+            <h1 id="logo">&lt;Kevin/&gt;</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+
+        <div class="introduction">
+            <div id="hero">
+                <h1>Hi, I am Kevin<span class="last-name"> Dacanay</span></h1>
+                <p>Software Engineer</p>
+            </div>
+            <img id="profile" src="assets/pfp.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="cta-buttons">
+            <button id="resume-btn">Resume</button>
+            <button id="contactme-btn">Contact Me</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main">
+        <!-- About Me Section -->
+        <div class="aboutme" id="aboutme">
+            <h1>About Me</h1>
+            <p>
+                I'm a passionate computer science student at Lewis University, currently pursuing 
+                a major in Computer Science with a minor in Cybersecurity. Based in the Chicago area, 
+                I have a strong interest in collaborating on projects related to software development, 
+                backend engineering, and cybersecurity.
+            </p>
+            <p>
+                In addition to my current skills, I am venturing into the exciting world of AI and machine
+                learning, eager to expand my knowledge and apply these technologies to real-world problems.
+            </p>
+        </div>
+
+        <!-- What I Do Section -->
+        <div class="whatido">
+            <h1 style="padding-bottom: 20px;">What I Do</h1>
+            <div class="categories">
+                <div class="cat" id="c1">
+                    <div class="cat-content">
+                        <div class="title-row">
+                            <img src="/assets/cybersecurity.webp" alt="Cybersecurity Icon">
+                            <h2>Cybersecurity</h2>
+                        </div>
+                        <p>
+                            I analyze vulnerabilities, implement security measures, and respond to incidents to ensure 
+                            the integrity and confidentiality of information. I stay updated on the latest security trends 
+                            to safeguard against potential threats.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cat" id="c2">
+                    <div class="cat-content">
+                        <div class="title-row">
+                            <img src="/assets/software.webp" alt="Software Icon">
+                            <h2>Software Engineering</h2>
+                        </div>
+                        <p>
+                            I work with cross-functional teams to gather requirements, write clean and efficient code, 
+                            and test applications. I aim to create innovative solutions that enhance user experience and functionality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cat" id="c3">
+                    <div class="cat-content">
+                        <div class="title-row">
+                            <img src="/assets/backend.webp" alt="Backend Icon">
+                            <h2>Back-end Development</h2>
+                        </div>
+                        <p>
+                            I create APIs, manage databases, and optimize server-side logic for scalable and secure applications. 
+                            My focus is on performance, data handling, and system design. Using Django, I create optimized back-end logic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Placeholder -->
+        <div class="skills">
+        <h1>My Skills</h1>
+            <div class="skill-list">
+                <ul>
+                <li style="--level: 4;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/javascript-logo.png" alt="javascript-logo">
+                    <h2>Javascript</h2>
+                </li>
+                <li style="--level: 8;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/html-logo.png" alt="html-logo">
+                    <h2>HTML</h2>
+                </li>
+                <li style="--level: 7;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/css-logo.png" alt="css-logo">
+                    <h2>CSS</h2>
+                </li>
+                <li style="--level: 7;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/c++-logo.png" alt="c++-logo">
+                    <h2>C++</h2>
+                </li>
+                <li style="--level: 8;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/java-logo.png" alt="java-logo">
+                    <h2>Java</h2>
+                </li>
+                <li style="--level: 9;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/python-logo.png" alt="python-logo">
+                    <h2>Python</h2>
+                </li>
+                <li style="--level: 5;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/django-logo.png" alt="django-logo">
+                    <h2>Django</h2>
+                </li>
+                <li style="--level: 3;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/flask-logo.png" alt="flask-logo">
+                    <h2>Flask</h2>
+                </li>
+                <li style="--level: 4;">
+                    <div class="proficiency-bar"></div>
+                    <img src="/assets/lua-logo.png" alt="lua-logo">
+                    <h2>Lua</h2>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="project-list">
+            <div class="project-card">
+                <h2 class="project-title">Operating System</h2>
+                <div class="project-description">
+                    <p>This project is a minimal operating system developed in C++ as an extension of my OS class, aimed at deepening my understanding of low-level programming concepts such as memory allocation, paging, multithreading, and system calls. </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2 class="project-title">ECommerce Website</h2>
+                <div class="project-description">
+                    <p>I designed an eCommerce platform modeled after Facebook Marketplace specifically for students at my university, utilizing Django for the backend to facilitate user interactions and transactions.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2 class="project-title">Restaurant Website</h2>
+                <div class="project-description">
+                    <p>This project features a restaurant website that provides essential information such as the menu, location, and online reservation capabilities, all powered by a Django backend for efficient data management.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2 class="project-title">Text Editor</h2>
+                <div class="project-description">
+                    <p>I developed a text editor in C++ using the Qt framework, designed to replicate the functionality of Notepad++, offering users a familiar and feature-rich text editing experience.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2 class="project-title">Blog</h2>
+                <div class="project-description">
+                    <p>This project is a simple blogging platform built with Flask, allowing users to create and share blog posts easily, focusing on a clean and user-friendly interface.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2 class="project-title">BlockBlast</h2>
+                <div class="project-description">
+                    <p> I created a fun and engaging block blast duplicate game in C++, showcasing my skills in game development and programming logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <section class="footer">
+        <hr>
+        <div id="contactme">
+            <h1>Contact Me</h1>
+            <p>Have a project in mind?</p>
+            <ul>
+                <li>Email: </li>
+                <li>Work Phone:</li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.github.com/Kienin">
+                    <img src="/assets/github-logo.png" alt="GitHub">
+                </a>
+                <a href="https://www.youtube.com/@KevinDacanay">
+                    <img src="/assets/youtube-logo.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-dacanay-4b1b30353">
+                    <img src="/assets/linkedin-logo.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
