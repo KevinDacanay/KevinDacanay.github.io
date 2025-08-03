@@ -6,6 +6,10 @@ hr {
     border-top: 2px solid #ccc;
     margin: 40px 80px;
 }
+a {
+    transition: 0.3 ease-in;
+}
+
 /* Hedaer */
 .header {
     color: white;
@@ -37,7 +41,7 @@ hr {
 }
 #nav-links li a:hover {
     border: none;
-    box-shadow: 0px 1px  black;
+    box-shadow: 0px 1px  rgb(207, 207, 207);
 }
 @media screen and (max-width: 768px) {
     #navbar {
@@ -96,6 +100,9 @@ hr {
     background-color: rgb(70, 84, 90);
     transition: .5s ease;
     box-shadow: 0 3px 10px black;
+    opacity: 0.8;
+    color: rgb(25, 235, 25);
+    transform: translateY(-2px); /* Slight raise effect */
 }
 
 
@@ -157,6 +164,7 @@ hr {
     font-size: 20px;
     border-radius: 20px;
     transition: flex-grow 0.5s ease, transform .5s ease;
+    box-shadow: 1px 10px 10px black;
 }
 .cat img {
     height: 40px;
@@ -299,7 +307,10 @@ hr {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   }
 
-  .cat h2,
+  .cat h2 {
+    font-size: 26px !important;
+    transition: none !important;
+  }
   .cat p {
     font-size: 16px !important;
     transition: none !important;
@@ -312,7 +323,9 @@ hr {
     flex-grow: 0 !important;
   }
 
-  .categories:hover .cat h2,
+  .categories:hover .cat h2 {
+    font-size: 26px !important;
+  }
   .categories:hover .cat p {
     font-size: 16px !important;
   }
@@ -351,6 +364,7 @@ hr {
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 10px;
+  box-shadow: 0px 1px 1px  black;
 }
 
 /* Inner green fill from left to right */
@@ -390,31 +404,105 @@ hr {
     color: white;
     font-family: monospace;
 }
+#github-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: rgba(84, 102, 109, 1);
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#github-btn img {
+    height: 20px; /* Adjust the logo size */
+    margin-right: 10px; /* Space between logo and text */
+}
+#github-btn a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#github-btn:hover {
+    background-color: rgba(63, 81, 89, 1); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight raise effect */
+}
+#github-btn:active {
+    transform: translateY(1px); /* When clicked, button moves down slightly */
+}
 
-.project-card {
-    display: inline-block;
+
+/* Project List Container */
+.project-list {
+    display: flex;
     flex-wrap: wrap;
-    width: 320px;
+    justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
     height: 180px;
     background-color: rgba(142, 161, 169, 1);
-    margin: 0px 20px 20px 0px;
-    padding-bottom: 10px;
+    margin: 20px;
+    padding: 0px 0px 10px;
     box-sizing: border-box;
     border-radius: 20px;
+    position: relative;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    box-shadow: 1px 3px 5px black;
+}
+
+.project-card:hover {
+    opacity: 0.8; /* Slight opacity effect on hover */
 }
 
 .project-title {
     font-size: 20px;
-    font: monospace;
-    border-radius: 20px 20px 0px 0px;
+    font-family: monospace;
     background-color: rgba(84, 102, 109, 1);
-    align-items: center;
-    justify-content: center;
+    padding: 0px 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin: 0;
 }
+
 .project-description {
+    padding-top: 10px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.check-me-out {
+    padding: 16px 16px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(84, 102, 109, 1);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    font-size: 12px;
+    box-shadow: 0px 1px 20px black;
+}
+
+.check-me-out a {
+    color: white;
+    text-decoration: none;
     font-size: 14px;
 }
 
+.project-card:hover .check-me-out {
+    opacity: 1; /* Show the "Check me out" button on hover */
+}
 
 /* Footer */
 .footer {
