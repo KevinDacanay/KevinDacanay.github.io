@@ -590,7 +590,7 @@ a {
 }
 .check-me-out a:hover {
     opacity: 0.8;
-    color: rgb(25, 235, 25);
+    color: red;
 }
 
 .project-card:hover .check-me-out {
@@ -627,4 +627,5 @@ a {
     object-fit: cover;
     margin:10px;
     background-color: white;
+
 }
