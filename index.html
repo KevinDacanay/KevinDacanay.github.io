@@ -3,266 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Dacanay | Portfolio</title>
+    <title>Kevin Dacanay  | Portfolio</title>
 
     <!-- Tailwind CDN for quick utility usage -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="text-gray-900 font-sans">
+
+<body class="font-sans bg-gray-50">
     <!-- Header and Navigation -->
     <section class="header">
-        <div id="navbar">
-            <h1 id="logo">
-                <a href="index.html">&lt;Kevin/&gt;</a>
+  <!-- Full-height navbar wrapper with background -->
+    <div class="bg-[rgba(47,56,64,1)] text-white py-7 px-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" id="navbar">
+        <h1 class="text-4xl font-bold text-center sm:text-left">
+            <a href="index.html">&lt;Kevin/&gt;</a>
+        </h1>
+
+        <nav class="w-full sm:w-auto flex justify-center sm:justify-start">
+            <ul id="nav-links" class="flex  flex-row gap-6 sm:gap-4 justify-center items-center text-center sm:space-x-6">
+                <li><a href="#aboutme" class="text-lg hover:text-blue-500">About Me</a></li>
+                <li><a href="#projects" class="text-lg hover:text-blue-500">Projects</a></li>
+                <li><a href="#contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+        <!-- This HR is now inside the background-colored container -->
+        <hr class="mt-4 border-gray-400">
+    </div>
+
+    <div class="introduction flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-6 gap-6">
+        <!-- Hero + Buttons -->
+        <div id="hero" class="flex flex-col items-center lg:items-start lg:justify-center">
+            <h1 class="text-3xl font-semibold">
+                Hi, I am <span class="font-extrabold">Kevin Dacanay</span> <span class="font-extrabold">!</span>
             </h1>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contactme">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
+            <p class="text-xl mt-2">Software Engineer</p>
 
-        <hr>
-
-        <div class="introduction">
-            <div id="hero">
-                <h1>Hi, I am Kevin<span class="last-name"> Dacanay!</span></h1>
-                <p>Software Engineer</p>
+            <!-- Buttons directly below hero -->
+            <div class="cta-buttons flex space-x-4 mt-6">
+                <button id="resume-btn" class="bg-green-400 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+                    <a href="resume.html">Resume</a>
+                </button>
+                <button id="contactme-btn" class="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700">
+                    <a href="#contactme">Contact Me</a>
+                </button>
             </div>
-            <img id="profile" src="assets/pfp.jpg" alt="Profile Picture">
         </div>
 
-        <div class="cta-buttons">
-            <button id="resume-btn"><a href="resume.html">Resume</a></button>
-            <button id="contactme-btn"><a href="#contactme">Contact Me</a></button>
+        <!-- Profile Image -->
+        <div class="flex justify-center lg:justify-end">
+            <img id="profile" src="assets/pfp.jpg" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover">
         </div>
+    </div>
+
     </section>
 
     <!-- Main Content -->
-    <section class="main">
+    <section class="main py-8 px-6">
+
         <!-- About Me Section -->
-        <div class="aboutme" id="aboutme">
-            <h1>About Me</h1>
-            <p>
-                Hello there! 👋
+        <div class="about-me text-center" id="aboutme">
+            <h1 class="text-3xl font-bold mb-4">- About Me -</h1>
+            <p class="mb-4">Hello there! 👋</p>
+            <p class="mb-4">
+                I'm a passionate computer science student at Lewis University, currently pursuing a major in Computer Science with a minor in Cybersecurity. Based in the USA area, I have a strong interest in collaborating on projects related to software development, backend engineering, and cybersecurity.
             </p>
-            <p>
-                I'm a passionate computer science student at Lewis University, currently pursuing 
-                a major in Computer Science with a minor in Cybersecurity. Based in the Chicago area, 
-                I have a strong interest in collaborating on projects related to software development, 
-                backend engineering, and cybersecurity.
-            </p>
-            <p>
-                In addition to my current skills, I am venturing into the exciting world of AI and machine
-                learning, eager to expand my knowledge and apply these technologies to real-world problems.
+            <p class="mb-4">
+                In addition to my current skills, I am venturing into the exciting world of AI and machine learning, eager to expand my knowledge and apply these technologies to real-world problems.
             </p>
         </div>
-
-        <!-- What I Do Section -->
-        <div class="whatido">
-            <h1 style="padding-bottom: 20px;">What I Do</h1>
-            <div class="categories">
-                <div class="cat" id="c1">
-                    <div class="cat-content">
-                        <div class="title-row">
-                            <img src="/assets/cybersecurity.webp" alt="Cybersecurity Icon">
-                            <h2>Cybersecurity</h2>
-                        </div>
-                        <p>
-                            I analyze vulnerabilities, implement security measures, and respond to incidents to ensure 
-                            the integrity and confidentiality of information. I stay updated on the latest security trends 
-                            to safeguard against potential threats.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="cat" id="c2">
-                    <div class="cat-content">
-                        <div class="title-row">
-                            <img src="/assets/software.webp" alt="Software Icon">
-                            <h2>Software Engineering</h2>
-                        </div>
-                        <p>
-                            I work with cross-functional teams to gather requirements, write clean and efficient code, 
-                            and test applications. I aim to create innovative solutions that enhance user experience and functionality.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="cat" id="c3">
-                    <div class="cat-content">
-                        <div class="title-row">
-                            <img src="/assets/backend.webp" alt="Backend Icon">
-                            <h2>Back-end Development</h2>
-                        </div>
-                        <p>
-                            I create APIs, manage databases, and optimize server-side logic for scalable and secure applications. 
-                            My focus is on performance, data handling, and system design. Using Django, I create optimized back-end logic.
-                        </p>
-                    </div>
-                </div>
+        <br>
+<!-- What I Do Section -->
+<div class="what-i-do text-center">
+    <h1 class="text-3xl font-bold mb-6">- What I Do -</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Cybersecurity Category -->
+        <div class="category flex flex-col items-center bg-gray-200 p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:bg-gray-500 hover:shadow-2xl hover:text-white">
+            <div class="category-content flex flex-col items-center text-center">
+                <img src="assets/cybersecurity.webp" alt="Cybersecurity Icon" class="w-20 h-20 mb-4">
+                <h2 class="text-2xl font-semibold">Cybersecurity</h2>
+                <p>I analyze vulnerabilities, implement security measures, and respond to incidents to ensure the integrity and confidentiality of information.</p>
             </div>
         </div>
 
-        <!-- Skills Placeholder -->
-        <div class="skills">
-        <h1>My Skills</h1>
-            <div class="skill-list">
-                <ul>
-                <li style="--level: 3;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/javascript-logo.png" alt="javascript-logo">
-                    <h2>Javascript</h2>
+        <!-- Software Engineering Category -->
+        <div class="category flex flex-col items-center bg-gray-200 p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:bg-gray-500 hover:shadow-2xl hover:text-white">
+            <div class="category-content flex flex-col items-center text-center">
+                <img src="assets/software.webp" alt="Software Icon" class="w-20 h-20 mb-4">
+                <h2 class="text-2xl font-semibold">Software Engineering</h2>
+                <p>I work with cross-functional teams to gather requirements, write clean and efficient code, and test applications to enhance user experience and functionality.</p>
+            </div>
+        </div>
+
+        <!-- Backend Development Category -->
+        <div class="category flex flex-col items-center bg-gray-200 p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:bg-gray-500 hover:shadow-2xl hover:text-white">
+            <div class="category-content flex flex-col items-center text-center">
+                <img src="assets/backend.webp" alt="Backend Icon" class="w-20 h-20 mb-4">
+                <h2 class="text-2xl font-semibold">Back-end Development</h2>
+                <p>I create APIs, manage databases, and optimize server-side logic for scalable and secure applications using Django and other frameworks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <br>
+        <!-- Skills Section -->
+        <div class="skills mt-8">
+            <h1 class="text-3xl font-bold mb-6 text-center">- My Skills -</h1>
+            <ul class="flex justify-center text-center px-30 mx-30 gap-9 flex-wrap">
+                <li class="skill-item text-center" style="--level: 4">
+                <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                <img src="assets/javascript-logo.png" alt="javascript-logo" class="mx-auto mb-4">
+                <h2>JavaScript</h2>
                 </li>
-                <li style="--level: 8;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/html-logo.png" alt="html-logo">
+                <li class="skill-item text-center" style="--level: 8">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/html-logo.png" alt="html-logo" class="mx-auto mb-4">
                     <h2>HTML</h2>
                 </li>
-                <li style="--level: 7;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/css-logo.png" alt="css-logo">
+                <li class="skill-item text-center" style="--level: 7">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/css-logo.png" alt="css-logo" class="mx-auto mb-4">
                     <h2>CSS</h2>
                 </li>
-                <li style="--level: 7;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/c++-logo.png" alt="c++-logo">
+                <li class="skill-item text-center" style="--level: 7">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/c++-logo.png" alt="c++-logo" class="mx-auto mb-4">
                     <h2>C++</h2>
                 </li>
-                <li style="--level: 8;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/java-logo.png" alt="java-logo">
+                <li class="skill-item text-center" style="--level: 8">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/java-logo.png" alt="java-logo" class="mx-auto mb-4">
                     <h2>Java</h2>
                 </li>
-                <li style="--level: 9;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/python-logo.png" alt="python-logo">
+                <li class="skill-item text-center" style="--level: 9">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/python-logo.png" alt="python-logo" class="mx-auto mb-4">
                     <h2>Python</h2>
                 </li>
-                <li style="--level: 7;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/django-logo.png" alt="django-logo">
+                <li class="skill-item text-center" style="--level: 8">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/django-logo.png" alt="django-logo" class="mx-auto mb-4">
                     <h2>Django</h2>
                 </li>
-                <li style="--level: 7;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/flask-logo.png" alt="flask-logo">
+                <li class="skill-item text-center" style="--level: 7">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/flask-logo.png" alt="flask-logo" class="mx-auto mb-4">
                     <h2>Flask</h2>
                 </li>
-                <li style="--level: 5;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/lua-logo.png" alt="lua-logo">
+                <li class="skill-item text-center" style="--level: 4">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/lua-logo.png" alt="lua-logo" class="mx-auto mb-4">
                     <h2>Lua</h2>
                 </li>
-                <li style="--level: 7;">
-                    <div class="proficiency-bar"></div>
-                    <img src="/assets/mysql-logo.png" alt="mysql-logo">
+                <li class="skill-item text-center" style="--level: 8">
+                                    <!-- Proficiency Bar -->
+                    <div class="w-20 h-3 bg-gray-300 rounded-full overflow-hidden shadow-[0_1px_1px_black] mx-auto mb-4">
+                        <div
+                        class="h-full bg-[#00ff91] rounded-l-full transition-all duration-400"
+                        style="width: calc(var(--level) * 10%)"
+                        ></div>
+                    </div>
+                <!-- Logo and Label -->
+                    <img src="assets/mysql-logo.png" alt="mysql-logo" class="mx-auto mb-4">
                     <h2>MySQL</h2>
                 </li>
-                </ul>
-            </div>
+            </ul>
         </div>
     </section>
-    <!--------------------------------------->
-    <!-- TO DO: Experience Section -->
-    <!--------------------------------------->
+    <br>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h1>Projects</h1>
-        <button id="github-btn">
-            <a href="https://www.github.com/KevinDacanay">
-                <img src="/assets/github-logo.png" alt="Github logo"> 
-                My Github</a>
+<!-- Projects Section -->
+<section class="projects py-12 bg-gray-100" id="projects">
+    <h1 class="text-4xl font-bold mb-8 text-center text-gray-800">- Projects -</h1>
+
+    <!-- GitHub Button -->
+    <div class="flex justify-center mb-8">
+        <button class="bg-green-400 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+            <a href="https://www.github.com/KevinDacanay" class="flex items-center justify-center space-x-2">
+                <div class="flex justify-center items-center gap-2 py-1 ">
+                    <img src="assets/github-logo.png" alt="Github logo" class="w-5 h-5">
+                    <span class="block mx-auto w-fit">My Github</span>
+                </div>
+            </a>
         </button>
-        <div class="project-list">
-            <div class="project-card">
-                <h2 class="project-title">Operating System</h2>
-                <div class="project-description">
-                    <p>This project is a minimal operating system developed in C++ as an extension of my OS class, aimed at deepening my understanding of low-level programming concepts such as memory allocation, paging, multithreading, and system calls. </p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h2 class="project-title">ECommerce Website</h2>
-                <div class="project-description">
-                    <p>I designed an eCommerce platform modeled after Facebook Marketplace specifically for students at my university, utilizing Django for the backend to facilitate user interactions and transactions.</p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h2 class="project-title">Restaurant Website</h2>
-                <div class="project-description">
-                    <p>This project features a restaurant website that provides essential information such as the menu, location, and online reservation capabilities, all powered by a Django backend for efficient data management.</p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h2 class="project-title">Text Editor</h2>
-                <div class="project-description">
-                    <p>I developed a text editor in C++ using the Qt framework, designed to replicate the functionality of Notepad++, offering users a familiar and feature-rich text editing experience.</p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h2 class="project-title">Blog</h2>
-                <div class="project-description">
-                    <p>This project is a simple blogging platform built with Flask, allowing users to create and share blog posts easily, focusing on a clean and user-friendly interface.</p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h2 class="project-title">BlockBlast</h2>
-                <div class="project-description">
-                    <p> I created a fun and engaging block blast duplicate game in C++, showcasing my skills in game development and programming logic.</p>
-                </div>
-                <div class="check-me-out">
-                    <a href="https://www.github.com/KevinDacanay" target="_blank">In Progress!</a>
-                </div>
-            </div>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="project-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
+        <!-- Repeat for each project -->
+        
+        <!-- Project 1 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Operating System</h2>
+            <p class="text-gray-600">This project is a minimal operating system developed in C++ as an extension of my OS class, aimed at deepening my understanding of low-level programming concepts such as memory allocation, paging, multithreading, and system calls.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-red-500 hover:underline mt-4 block">In Progress!</a>
         </div>
-    </section>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">ECommerce Website</h2>
+            <p class="text-gray-600">I designed an eCommerce platform modeled after Facebook Marketplace specifically for students at my university, utilizing Django for the backend to facilitate user interactions and transactions.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-red-500 hover:underline mt-4 block">In Progress!</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Restaurant Website</h2>
+            <p class="text-gray-600">This project features a restaurant website that provides essential information such as the menu, location, and online reservation capabilities, all powered by a Django backend for efficient data management.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-red-500 hover:underline mt-4 block">In Progress!</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Text Editor</h2>
+            <p class="text-gray-600">I developed a text editor in C++ using the Qt framework, designed to replicate the functionality of Notepad++, offering users a familiar and feature-rich text editing experience.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-blue-500 hover:underline mt-4 block">Check me out!</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Blog</h2>
+            <p class="text-gray-600">This project is a simple blogging platform built with Flask, allowing users to create and share blog posts easily, focusing on a clean and user-friendly interface.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-blue-500 hover:underline mt-4 block">Check me out!</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:border hover:border-gray-300 hover:bg-gray-50">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">BlockBlast</h2>
+            <p class="text-gray-600">I created a fun and engaging block blast duplicate game in C++, showcasing my skills in game development and programming logic.</p>
+            <a href="https://www.github.com/KevinDacanay" class="text-red-500 hover:underline mt-4 block">In Progress!</a>
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Footer / Contact Section -->
-    <section class="footer">
-        <hr>
-        <div id="contactme">
-            <h1>Let's connect!</h1>
-            <p>Have a project in mind?</p>
-            <ul>
+    <section class="footer py-8 bg-[rgba(47,56,64,1)]">
+        <div id="contactme" class="text-center">
+            <h1 class="text-3xl text-white font-bold mb-4">Let's connect!</h1>
+                        <p class="mb-4 text-white ">Have a project in mind?</p>
+            <ul class="list-none space-y-2 mb-6 text-white ">
                 <li>Email: xxx.xxx@gmail.com</li>
-                <li>Work Phone: 1 (xxx) xxx - xxxx </li>
+                <li>Work Phone: 1 (xxx) xxx - xxxx</li>
             </ul>
-            <div class="socials">
-                <a href="https://www.github.com/KevinDacanay">
-                    <img src="/assets/github-logo.png" alt="GitHub">
+            <div class="socials flex justify-center space-x-6">
+                <a href="https://www.github.com/KevinDacanay" class="text-gray-800 hover:text-black">
+                    <img src="assets/github-logo.png" alt="GitHub" class="w-8 h-8">
                 </a>
-                <a href="https://www.youtube.com/@KevinDacanay">
-                    <img src="/assets/youtube-logo.png" alt="YouTube">
+                <a href="https://www.youtube.com/@KevinDacanay" class="text-gray-800 hover:text-black">
+                    <img src="assets/youtube-logo.png" alt="YouTube" class="w-8 h-8">
                 </a>
-                <a href="https://www.linkedin.com/in/kevin-dacanay-4b1b30353">
-                    <img src="/assets/linkedin-logo.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/--4b1b30353" class="text-gray-800 hover:text-black">
+                    <img src="assets/linkedin-logo.png" alt="LinkedIn" class="w-8 h-8">
                 </a>
             </div>
         </div>
     </section>
 </body>
-
 </html>
-
-
-
-
