@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Dacanay  | Portfolio</title>
+    <title>Kevin Dacanay | Portfolio</title>
 
     <!-- Tailwind CDN for quick utility usage -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tailwind.css">
 </head>
 
 <body class="font-sans bg-gray-50">
     <!-- Header and Navigation -->
     <section class="header">
   <!-- Full-height navbar wrapper with background -->
-    <div class="bg-[rgba(47,56,64,1)] text-white py-7 px-6">
+    <div class="bg-[rgba(47,56,64,1)] text-white py-4 px-6">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" id="navbar">
-        <h1 class="text-4xl font-bold text-center sm:text-left">
-            <a href="index.html">&lt;Kevin/&gt;</a>
-        </h1>
+            <h1 class="text-4xl font-bold text-center sm:text-left">
+                <a href="index.html">&lt;Kevin/&gt;</a>
+            </h1>
 
-        <nav class="w-full sm:w-auto flex justify-center sm:justify-start">
-            <ul id="nav-links" class="flex  flex-row gap-6 sm:gap-4 justify-center items-center text-center sm:space-x-6">
-                <li><a href="#aboutme" class="text-lg hover:text-blue-500">About Me</a></li>
-                <li><a href="#projects" class="text-lg hover:text-blue-500">Projects</a></li>
-                <li><a href="#contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
-            </ul>
-        </nav>
-    </div>
+            <nav class="w-full sm:w-auto flex justify-center sm:justify-start">
+                <ul id="nav-links" class="flex  flex-row gap-6 sm:gap-4 justify-center items-center text-center sm:space-x-6">
+                    <li><a href="#aboutme" class="text-lg hover:text-blue-500">About Me</a></li>
+                    <li><a href="#projects" class="text-lg hover:text-blue-500">Projects</a></li>
+                    <li><a href="#contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
         <!-- This HR is now inside the background-colored container -->
@@ -70,7 +70,7 @@
             <h1 class="text-3xl font-bold mb-4">- About Me -</h1>
             <p class="mb-4">Hello there! 👋</p>
             <p class="mb-4">
-                I'm a passionate computer science student at Lewis University, currently pursuing a major in Computer Science with a minor in Cybersecurity. Based in the USA area, I have a strong interest in collaborating on projects related to software development, backend engineering, and cybersecurity.
+                I'm a passionate computer science student at University, currently pursuing a major in Computer Science with a minor in Cybersecurity. Based in the USA area, I have a strong interest in collaborating on projects related to software development, backend engineering, and cybersecurity.
             </p>
             <p class="mb-4">
                 In addition to my current skills, I am venturing into the exciting world of AI and machine learning, eager to expand my knowledge and apply these technologies to real-world problems.
@@ -247,7 +247,7 @@
     <!-- GitHub Button -->
     <div class="flex justify-center mb-8">
         <button class="bg-green-400 text-white px-6 py-2 rounded-lg hover:bg-green-700">
-            <a href="https://www.github.com/KevinDacanay" class="flex items-center justify-center space-x-2">
+            <a href="https://www.github.com/" class="flex items-center justify-center space-x-2">
                 <div class="flex justify-center items-center gap-2 py-1 ">
                     <img src="assets/github-logo.png" alt="Github logo" class="w-5 h-5">
                     <span class="block mx-auto w-fit">My Github</span>
@@ -308,9 +308,12 @@
 
 
     <!-- Footer / Contact Section -->
-    <section class="footer py-8 bg-[rgba(47,56,64,1)]">
+     
+    <div class="footer bg-[rgba(47,56,64,1)] text-white py-4 px-6">
+             <!-- This HR is now inside the background-colored container -->
+        <hr class=" mt-4 border-gray-400">   
         <div id="contactme" class="text-center">
-            <h1 class="text-3xl text-white font-bold mb-4">Let's connect!</h1>
+            <h1 class="text-3xl text-white font-bold mb-4 pt-3">Let's connect!</h1>
                         <p class="mb-4 text-white ">Have a project in mind?</p>
             <ul class="list-none space-y-2 mb-6 text-white ">
                 <li>Email: xxx.xxx@gmail.com</li>
@@ -323,12 +326,11 @@
                 <a href="https://www.youtube.com/@KevinDacanay" class="text-gray-800 hover:text-black">
                     <img src="assets/youtube-logo.png" alt="YouTube" class="w-8 h-8">
                 </a>
-                <a href="https://www.linkedin.com/in/--4b1b30353" class="text-gray-800 hover:text-black">
+                <a href="https://www.linkedin.com/in/kevin-dacanay-4b1b30353" class="text-gray-800 hover:text-black">
                     <img src="assets/linkedin-logo.png" alt="LinkedIn" class="w-8 h-8">
                 </a>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
-
