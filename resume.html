@@ -9,17 +9,24 @@
 </head>
 <body class="bg-white-100 font-sans">    
     <section class="header">
-        <div id="navbar">
-            <h1 class="text-4xl font-bold text-center sm:text-left">
-                <a href="index.html">&lt;Kevin/&gt;</a>
-            </h1>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
-                </ul>
-            </nav>
+      <!-- Full-height navbar wrapper with background -->
+        <div class="bg-[rgba(47,56,64,1)] text-white py-4 px-6">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" id="navbar">
+                <h1 class="text-4xl font-bold text-center sm:text-left">
+                    <a href="index.html">&lt;Kevin/&gt;</a>
+                </h1>
+    
+                <nav class="w-full sm:w-auto flex justify-center sm:justify-start">
+                    <ul id="nav-links" class="flex  flex-row gap-6 sm:gap-4 justify-center items-center text-center sm:space-x-6">
+                        <li><a href="#contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+    
+            <!-- This HR is now inside the background-colored container -->
+            <hr class="mt-4 border-gray-400">
         </div>
-        <hr>
     </section>
     
     <section class="main-content">
@@ -270,6 +277,7 @@
     </section>
 </body>
 </html> 
+
 
 
 
