@@ -36,7 +36,7 @@ body {
 
 
 /* ---- Header ---- */
-.header {
+/* .header {
     background-color: rgba(47, 56, 64, 1);
     color: white;
     font-family: sans-serif;
@@ -77,7 +77,7 @@ body {
         flex-direction: column;
     }
 
-}
+} */
 
 
 /* ---- Personal Info ---- */
@@ -345,3 +345,4 @@ body {
     }
 
 }
+
