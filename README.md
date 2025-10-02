@@ -32,8 +32,8 @@ The website is built with simple, modern web technologies like HTML, CSS, and Ja
 
 ## Technologies Used
 
-- **HTML5** – For structuring the content of the website.
-- **CSS3** – For styling and responsive design.
+- **HTML** – For structuring the content of the website.
+- **TAILWINDCSS** – For styling and responsive design.
 - **GitHub Pages** – For hosting the static website.
 
 ## License
