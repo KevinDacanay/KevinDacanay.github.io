@@ -39,4 +39,3 @@ The website is built with simple, modern web technologies like HTML, CSS, and Ja
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
