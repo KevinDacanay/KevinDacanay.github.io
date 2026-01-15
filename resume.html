@@ -7,287 +7,242 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="flex flex-col font-sans m-0 bg-gray-50">
 
-  <!-- Header -->
-  <section ">
-    <div class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-4 px-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" id="navbar">
-            <h1 class="text-4xl font-bold text-center sm:text-left">
-                <a href="index.html">&lt;Kevin/&gt;</a>
-            </h1>
+<body class="flex flex-col font-sans bg-gray-50">
 
-            <nav class="w-full sm:w-auto flex justify-center sm:justify-start">
-                <ul id="nav-links" class="flex  flex-row gap-6 sm:gap-4 justify-center items-center text-center sm:space-x-6">
-                    <li><a href="#index.html/contactme" class="text-lg hover:text-blue-500">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Header / Navbar -->
+  <header class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-4 px-6">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <h1 class="text-4xl font-bold text-center sm:text-left">
+        <a href="index.html" class="hover:text-blue-300 transition">&lt;Kevin/&gt;</a>
+      </h1>
 
-
-        <!-- This HR is now inside the background-colored container -->
-        <hr class="mt-4 border-gray-400">
+      <nav class="flex justify-center">
+        <ul class="flex gap-6 text-lg">
+          <li>
+            <a href="#contact" class="hover:text-blue-300 transition">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </section>
+    <hr class="mt-4 border-gray-400">
+  </header>
 
   <!-- Main Content -->
-  <section class="flex flex-col md:flex-row w-full p-2">
+  <main class="flex flex-col md:flex-row w-full p-4 gap-4">
 
     <!-- Left Column -->
-    <section class="w-full md:w-72 p-2 flex-shrink-0 ">
+    <aside class="w-full md:w-72 flex-shrink-0 space-y-4">
 
       <!-- Personal Info -->
-      <section class="bg-gray-300 shadow-[0_3px_10px_rgb(53,53,53)]">
-        <div>
-          <img src="assets/pfp.png" alt="Profile Picture" class="w-full">
-          <div class="text-2xl pl-2">Kevin Dacanay</div>
-        </div>
+      <section class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="assets/images/pfp.png" alt="Profile Picture" class="w-full">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold">Kevin Dacanay</h2>
+          <p class="text-gray-700">Software Engineer</p>
 
-        <div class="pl-2 py-2">
-          <ul class="space-y-2">
-            <li>Software Engineer</li>
+          <ul class="mt-3 space-y-2 text-gray-600">
             <li class="flex items-center gap-2">
-              <img src="assets/home-logo.png" class="w-5 h-5"> <span>Chicago, IL</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <img src="assets/email.logo.png" class="w-5 h-5"> <span>xxx.xxx@gmail.com</span>
+              <img src="assets/icons/home-logo.png" class="w-5 h-5">
+              Chicago, IL
             </li>
             <li class="flex items-center gap-2">
-              <img src="assets/phone-logo.png" class="w-5 h-5"> <span>1 (xxx) xxx - xxxx</span>
+              <img src="assets/icons/email.logo.png" class="w-5 h-5">
+              xxx.xxx@gmail.com
             </li>
-          </ul>
-        </div>
-
-        <!-- Skills -->
-        <div class="p-3 ">
-          <h2 class="text-xl">Skills</h2>
-          <ul class="flex flex-row flex-wrap justify-center items-center gap-6 mt-4">
-            <li class="flex items-center gap-3">
-              <img src="assets/python-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[90%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/java-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[80%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/c++-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[70%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/html-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[80%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/css-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[70%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/javascript-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[40%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/django-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[70%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/flask-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[80%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/lua-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[40%]"></div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <img src="assets/mysql-logo.png" class="w-9 h-9 rounded-full">
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[80%]"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Languages -->
-        <div class="p-3">
-          <h2 class="text-xl">Languages</h2>
-          <ul class="space-y-3 mt-2">
-            <li class="flex flex-col">
-              <h4>English</h4>
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[100%]"></div>
-              </div>
-            </li>
-            <li class="flex flex-col">
-              <h4>Tagalog</h4>
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[100%]"></div>
-              </div>
-            </li>
-            <li class="flex flex-col">
-              <h4>Spanish</h4>
-              <div class="w-48 h-3 bg-gray-400 rounded overflow-hidden">
-                <div class="bg-green-400 h-full w-[40%]"></div>
-              </div>
+            <li class="flex items-center gap-2">
+              <img src="assets/icons/phone-logo.png" class="w-5 h-5">
+              1 (xxx) xxx-xxxx
             </li>
           </ul>
         </div>
       </section>
-    </section>
+
+      <!-- Skills -->
+      <section class="bg-white shadow-lg rounded-xl p-4 space-y-4">
+        <h2 class="text-xl font-bold">Technical Skills</h2>
+
+        <!-- Programming Languages -->
+        <div>
+          <h3 class="font-semibold mb-2">Languages</h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <img src="assets/icons/python-logo.png" class="w-12 h-12 rounded-full object-contain" title="Python">
+            <img src="assets/icons/java-logo.png" class="w-12 h-12 rounded-full object-contain" title="Java">
+            <img src="assets/icons/c++-logo.png" class="w-12 h-12 rounded-full object-contain" title="C++">
+            <img src="assets/icons/c-logo.png" class="w-12 h-12 rounded-full object-contain" title="C">
+            <img src="assets/icons/javascript-logo.png" class="w-12 h-12 rounded-full object-contain" title="JavaScript">
+            <img src="assets/icons/html-logo.png" class="w-12 h-12 rounded-full object-contain" title="HTML">
+            <img src="assets/icons/css-logo.png" class="w-12 h-12 rounded-full object-contain" title="CSS">
+            <img src="assets/icons/lua-logo.png" class="w-12 h-12 rounded-full object-contain" title="Lua">
+            <img src="assets/icons/assembly-logo.png" class="w-12 h-12 rounded-full object-contain" title="Assembly">
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div>
+          <h3 class="font-semibold mb-2">Databases & Tools</h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <img src="assets/icons/mysql-logo.png" class="w-12 h-12 rounded-full object-contain" title="MySQL">
+            <img src="assets/icons/sqlite-logo.png" class="w-12 h-12 rounded-full object-contain" title="SQLite">
+            <img src="assets/icons/mongodb-logo.png" class="w-12 h-12 rounded-full object-contain" title="MongoDB">
+            <img src="assets/icons/firebase-logo.png" class="w-12 h-12 rounded-full object-contain" title="Firebase">
+            <img src="assets/icons/git-logo.png" class="w-12 h-12 rounded-full object-contain" title="Git">
+            <img src="assets/icons/docker-logo.png" class="w-12 h-12 rounded-full object-contain" title="Docker">
+          </div>
+        </div>
+
+        <!-- Spoken Languages -->
+        <div>
+          <h3 class="font-semibold mb-2">Languages Spoken</h3>
+          <ul class="space-y-1 text-gray-700">
+            <li>English — Fluent</li>
+            <li>Tagalog — Fluent</li>
+            <li>Spanish — Moderate</li>
+          </ul>
+        </div>
+      </section>
+    </aside>
 
     <!-- Right Column -->
-    <section class="flex flex-col flex-grow p-2 space-y-4">
+    <section class="flex flex-col flex-grow space-y-4">
 
       <!-- Summary -->
-      <section class="bg-gray-300 shadow-[0_3px_10px_rgb(53,53,53)] p-4 ">
-        <div class="flex items-center gap-3">
-          <img src="assets/summary-logo.png" class="w-12 h-12">
-          <h1 class="text-xl">Summary</h1>
+      <section class="bg-white shadow-lg rounded-xl p-4">
+        <h2 class="text-xl font-bold mb-2">Summary</h2>
+        <p>
+          Computer Science student focused on building scalable systems, backend APIs,
+          and well-designed software. Strong foundation in system design, operating systems,
+          and full-stack development with an emphasis on clean architecture and performance.
+          Passionate about learning new technologies and applying best practices to real-world
+          problems. Actively contributing to open-source projects and building portfolio projects
+          to showcase practical skills.
+        </p>
+      </section>
+
+      <!-- Resume PDF -->
+      <section class="bg-white shadow-lg rounded-xl p-4">
+        <h2 class="text-xl font-bold mb-2">Resume (PDF)</h2>
+        <p class="ml-4 mb-4 text-gray-600">
+          View or download a printable PDF version of this resume.
+        </p>
+        <div class="flex gap-4 ml-4">
+          <a href="assets/KevinResume.pdf" target="assets/KevinResume.pdf"
+             class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            View PDF
+          </a>
+          <a href="assets/KevinResume.pdf" download
+             class="px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+            Download
+          </a>
         </div>
-        <p class="mt-2">
-              I am a 3rd year Computer Science student at Lewis University, currently pursuing a 
-              major in Computer Science and a minor in Cybersecurity. My academic interests span 
-              systems programming, web development, and secure software design. I have hands-on 
-              experience in collaborative and individual development projects, focusing on practical 
-              implementation of core computer science concepts. I continuously supplement my formal 
-              education with self-directed learning through online platforms and independent study. 
-          </p>
       </section>
 
       <!-- Experience -->
-      <section class="bg-gray-300 shadow-[0_3px_10px_rgb(53,53,53)] p-4">
-        <div class="flex items-center gap-3">
-          <img src="assets/experience-logo.png" class="w-12 h-12">
-          <h1 class="text-xl">Experience</h1>
+      <section class="bg-white shadow-lg rounded-xl p-4 space-y-4">
+        <h2 class="text-xl font-bold">Experience</h2>
+
+        <div>
+          <h3 class="text-lg font-semibold">Operating System Project Development</h3>
+          <span class="italic text-green-500">Jan 2025 – Present</span>
+          <p class="ml-4 mt-2">
+            Developing a custom lightweight operating system in C++ and assembly.
+            Implemented process scheduling, memory management, and filesystem components.
+            Focused on optimizing system performance and understanding low-level hardware interactions.
+          </p>
         </div>
-        <div class="mt-3">
-          <h2 class="text-lg">Operating System Project Development</h2>
-          <h3 class="italic text-green-600">Jan. 2025 - Present</h3>
-          <p class="ml-4 mt-1">
-            Working on the development of a custom lightweight operating system as part of my OS-3400 course. 
-            The project includes implementing core OS functionalities such as process scheduling, memory management,
-            and file system operations using C++ and assembly. Taking on this project deepens my understanding of 
-            low-level computing, hardware-software interaction, and system performance optimization.
-          </p>
-          </div>
-        <hr class="my-3 border-gray-400">
 
-          <div class="mt-3">
-          <h2 class="text-lg">Lewis Marketplace  Website Project</h2>
-          <h3 class="italic text-green-600">Jun 2024 - Present</h3>
-          <p class="ml-4 mt-1">
-            Collaborating with a team of developers to create a full-stack e-commerce platform specifically made for 
-            the Lewis University community. The website integrates user authentication, product listings, payment processing, 
-            and an administrative dashboard. Tech stack includes React, Node.js, Django, and MySQL. 
-            This project has honed my skills in frontend and backend integration, RESTful API design, and real-world application deployment.
+        <div>
+          <h3 class="text-lg font-semibold">Lewis Marketplace Website</h3>
+          <span class="italic text-green-500">Jun 2024 – Present</span>
+          <p class="ml-4 mt-2">
+            Full-stack development of a university marketplace platform.
+            Built REST APIs, authentication, and database-driven features using Django and MySQL.
+            Collaborated with peers to ensure responsive design and a smooth user experience.
           </p>
-          </div>
-        <hr class="my-3 border-gray-400">
+        </div>
 
-          <div class="mt-3">
-          <h2 class="text-lg">Restaurant Webapp</h2>
-          <h3 class="italic text-green-600">Apr 2024 - Present</h3>
-          <p class="ml-4 mt-1">
-            Designing and developing a dynamic web application for my uncle's restaurant to streamline online ordering and reservations. 
-            Features include a responsive UI and a content management system for menu updates. Utilizing technologies such as HTML/CSS, 
-            JavaScript, Bootstrap, and Django. I try to focus on user experience design and real-time database integration with this project.
+        <div>
+          <h3 class="text-lg font-semibold">KPad Text Editor</h3>
+          <span class="italic text-green-500">Apr 2024 – Present</span>
+          <p class="ml-4 mt-2">
+            Designed and implemented a C++/Qt text editor with file management,
+            formatting support, and cross-platform UI considerations.
+            Focused on creating a clean, intuitive interface while maintaining efficient memory usage.
           </p>
-          </div>
+        </div>
+
       </section>
 
       <!-- Education -->
-      <section class="bg-gray-300 shadow-[0_3px_10px_rgb(53,53,53)] p-4">
-        <div class="flex items-center gap-3">
-          <img src="assets/education-logo.png" class="w-12 h-12">
-          <h1 class="text-xl">Education</h1>
-        </div>
-        <div class="mt-3">
-          <h2 class="text-lg">Lewis University</h2>
-          <h3 class="italic text-green-600">Aug 2023 - Present</h3>
-          <p class="ml-6 mt-1">
-            Pursuing a Bachelor’s degree in Computer Science with a minor in Cybersecurity. Coursework includes data structures and 
-            algorithms, operating systems, computer networks, computer organization, database management, and ethical hacking. I also 
-            am an active participant in our cybersecurity club.
+      <section class="bg-white shadow-lg rounded-xl p-4 space-y-4">
+        <h2 class="text-xl font-bold">Education</h2>
+
+        <div>
+          <h3 class="text-lg font-semibold">Lewis University</h3>
+          <span class="italic text-green-500">Aug 2023 – Present</span>
+          <p class="ml-4 mt-2">
+            B.S. in Computer Science, Minor in Cybersecurity.
+            Coursework includes Data Structures, Algorithms, Operating Systems, Databases, and Secure Software Design.
+            Actively participating in coding clubs and hackathons to apply classroom learning to practical challenges.
           </p>
         </div>
-        <div class="mt-3">
-          <h2 class="text-lg">Coursera</h2>
-          <h3 class="italic text-green-600">Dec 2024 - Present</h3>
-          <p class="ml-6 mt-1">
-            Provided by my university, I am enrolled in professional development courses focused on back-end development, full-stack 
-            development, and cybersecurity practices. Platforms include certifications from Google and Meta. These courses supplement 
-            my academic learning with industry-relevant skills and practical lab experiences.
+
+        <div>
+          <h3 class="text-lg font-semibold">Coursera</h3>
+          <span class="italic text-green-500">Dec 2024 – Present</span>
+          <p class="ml-4 mt-2">
+            Industry-aligned coursework in backend development, system design, and cybersecurity (Google, Meta).
+            Gaining exposure to real-world projects and best practices in software engineering.
           </p>
         </div>
-        <div class="mt-3">
-          <h2 class="text-lg">W3 school & GeeksforGeeks</h2>
-          <h3 class="italic text-green-600">May 2023 - Present</h3>
-          <p class="ml-6 mt-1">
-            I am consistently engaging with tutorials, coding challenges, and theoretical material to reinforce concepts in data structures,
-            algorithms, web development, and software engineering. GeeksforGeeks has been very helpful in my preparation for technical 
-            interviews and algorithmic problem solving, while W3Schools supports ongoing frontend development practice.
+
+        <div>
+          <h3 class="text-lg font-semibold">LeetCode</h3>
+          <span class="italic text-green-500">Dec 2023 – Present</span>
+          <p class="ml-4 mt-2">
+            Regular practice of algorithmic problems and system design to improve problem-solving speed and technical depth.
+            Focused on mastering data structures, optimization techniques, and competitive programming skills.
           </p>
         </div>
-        <div class="mt-3">
-          <h2 class="text-lg">Youtube</h2>
-          <h3 class="italic text-green-600">May 2023 - Present</h3>
-          <p class="ml-6 mt-1">
-            I have a consume a curated playlists and video tutorials by experienced software engineers to gain deeper insight into 
-            emerging technologies and frameworks such as React, Docker, and cybersecurity tools. YouTube has served as a flexible, 
-            on-demand learning resource that supports both project development and theoretical learning.
-          </p>
-        </div>
-        <div class="mt-3">
-          <h2 class="text-lg">Leetcode</h2>
-          <h3 class="italic text-green-600">Dec 2023 - Present</h3>
-          <p class="ml-6 mt-1">
-            I actively use LeetCode to sharpen my problem-solving skills and deepen my understanding of data structures and algorithms. 
-            I regularly complete challenges in areas like dynamic programming, recursion, graphs, and system design. Practicing on this 
-            platform has helped me improve both my speed and accuracy in solving technical problems, while also preparing me for coding 
-            interviews. 
-          </p>
-        </div>
+
       </section>
     </section>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <section class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-4 px-6">
-    <div class="text-center">
-      <hr class="mb-2 border-gray-400">
-            <h1 class="text-3xl text-white font-bold mb-4 pt-3">Let's connect!</h1>
-      <div class="flex justify-center gap-4 mt-4">
-        <a href="https://www.github.com/KevinDacanay">
-          <img src="assets/github-logo.png" class="w-12 h-12 rounded-full bg-white p-1">
-        </a>
-        <a href="https://www.youtube.com/@KevinDacanay">
-          <img src="assets/youtube-logo.png" class="w-12 h-12 rounded-full bg-white p-1">
-        </a>
-        <a href="https://www.linkedin.com/in/kevin-dacanay-4b1b30353">
-          <img src="assets/linkedin-logo.png" class="w-12 h-12 rounded-full bg-white p-1">
-        </a>
-      </div>
+<!-- ================= FOOTER ================= -->
+<footer id="contactme" class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-5">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <hr class="border-gray-400 mt-4">
+
+    <!-- Footer Heading -->
+    <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+    <p class="text-gray-100 mb-6">Feel free to reach out via any of the platforms below.</p>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mb-8">
+      <a href="#" class="hover:scale-110 transition transform">
+        <img src="assets/icons/github-logo.png" alt="GitHub" class="w-12 h-12 rounded-full bg-white p-1">
+      </a>
+      <a href="#" class="hover:scale-110 transition transform">
+        <img src="assets/icons/linkedin-logo.png" alt="LinkedIn" class="w-12 h-12 rounded-full bg-white p-1">
+      </a>
+      <a href="#" class="hover:scale-110 transition transform">
+        <img src="assets/icons/youtube-logo.png" alt="YouTube" class="w-12 h-12 rounded-full bg-white p-1">
+      </a>
     </div>
-  </section>
+
+    <!-- Footer Links -->
+    <div class="flex justify-center gap-6 mb-6 text-gray-200">
+      <a href="#aboutme" class="hover:underline transition">About Me</a>
+      <a href="#skills" class="hover:underline transition">Skills</a>
+      <a href="#projects" class="hover:underline transition">Projects</a>
+    </div>
+
+    <!-- Footer Copyright -->
+    <p class="text-gray-300 text-sm">&copy; 2026 &ltKevin/>. All rights reserved.</p>
+
+  </div>
+</footer>
 
 </body>
 </html>
-
-
