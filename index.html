@@ -15,30 +15,26 @@
 <body class="font-sans bg-gray-50 text-gray-800">
 
   <!-- ================= HEADER / NAV ================= -->
-  <header class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-4 px-6">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <h1 class="text-4xl font-bold text-center sm:text-left">
-        <a href="index.html" class="hover:text-blue-300 transition">&lt;Kevin/&gt;</a>
-      </h1>
+	<header class="bg-gradient-to-r from-blue-500 to-purple-900 text-white px-10 py-5">
+		<div class="flex flex-col sm:flex-row items-center justify-between gap-4">
 
+			<h1 class="text-[30px] font-bold text-center sm:text-left">
+			<a href="index.html" class="text-white font-bold hover:opacity-80 transition">
+				&lt;Kevin/&gt;
+			</a>
+			</h1>
 
-    <!-- Navigation -->
-    <nav class="flex justify-center">
-      <ul class="flex gap-6 text-lg">
-        <li><a href="#projects" class="hover:text-blue-300 transition">Projects</a></li>
-        <li><a href="#aboutme" class="hover:text-blue-300 transition">About Me</a></li>
-        <li><a href="#skills" class="hover:text-blue-300 transition">Skills</a></li>
-        <li><a href="#contactme" class="hover:text-blue-300 transition">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+			<nav class="flex justify-center">
+			<ul class="flex gap-5 list-none">
+				<li><a href="https://polite-bush-06b91461e.6.azurestaticapps.net/" class="text-white font-bold hover:opacity-80 transition">Projects</a></li>
+				<li><a href="#aboutme" class="text-white font-bold hover:opacity-80 transition">About Me</a></li>
+				<li><a href="#skills" class="text-white font-bold hover:opacity-80 transition">Skills</a></li>
+				<li><a href="#contactme" class="text-white font-bold hover:opacity-80 transition">Contact</a></li>
+			</ul>
+			</nav>
 
-    <!-- Horizontal line always shown -->
-    <hr class="border-gray-400 mt-4">
-
-</header>
-
-</header>
+		</div>
+	</header>
 
   <!-- ================= HERO ================= -->
   <section class="py-10 bg-white">
@@ -59,14 +55,24 @@
             <!-- CTA Buttons -->
             <div class="mt-8 flex gap-4">
                 <a
-                href="resume.html"
-                class="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
-                >
-                View Resume
-                </a>
+				href="resume.html"
+				class="block mx-auto mb-10 px-6 py-3 rounded-lg font-semibold text-white
+					bg-gradient-to-r from-green-500 to-emerald-600
+					shadow-md 
+					hover:-translate-y-[3px] 
+					hover:shadow-[0_10px_25px_rgba(34,197,94,0.35)] 
+					transition duration-300 ease-out"
+				>
+				View Resume
+				</a>
                 <a
                 href="#projects"
-                class="px-6 py-3 border border-gray-400 text-gray-800 font-semibold rounded-lg hover:bg-gray-100 transition"
+                class="block mx-auto mb-10 px-6 py-3 rounded-lg font-semibold text-white 
+					bg-gradient-to-r from-purple-500 to-indigo-500 
+					shadow-md 
+					hover:-translate-y-[3px] 
+					hover:shadow-[0_10px_25px_rgba(139,66,248,0.304)] 
+					transition duration-300 ease-out"
                 >
                 View Projects
                 </a>
@@ -169,7 +175,7 @@
 
       <!-- Databases & Backend -->
       <div>
-        <h3 class="text-2xl font-semibold mb-6">Databases & Backend</h3>
+        <h3 class="text-2xl font-semibold mb-6">Databases</h3>
         <div class="flex flex-wrap justify-center gap-6">
           <img src="assets/icons/mysql-logo.png" alt="MySQL" class="w-16 h-16 rounded-50 object-contain fade-in-icon" title="MySQL">
           <img src="assets/icons/sqlite-logo.png" alt="SQLite" class="w-16 h-16 rounded-50 object-contain fade-in-icon" title="SQLite">
@@ -182,13 +188,14 @@
       <div>
         <h3 class="text-2xl font-semibold mb-6">Data Science & ML</h3>
         <div class="flex flex-wrap justify-center gap-6">
-          <img src="assets/icons/numpy-logo.png" alt="NumPy" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="NumPy">
-          <img src="assets/icons/pandas-logo.png" alt="Pandas" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="Pandas">
-          <img src="assets/icons/matplotlib-logo.png" alt="Matplotlib" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="Matplotlib">
-          <img src="assets/icons/scipy-logo.png" alt="SciPy" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="SciPy">
-          <img src="assets/icons/scikit-learn-logo.png" alt="scikit-learn" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="scikit-learn">
-          <img src="assets/icons/pytorch-logo.png" alt="PyTorch" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="PyTorch">
-          <img src="assets/icons/tensorflow-logo.png" alt="TensorFlow" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="TensorFlow">
+			<img src="assets/icons/numpy-logo.png" alt="NumPy" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="NumPy">
+			<img src="assets/icons/pandas-logo.png" alt="Pandas" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="Pandas">
+			<img src="assets/icons/matplotlib-logo.png" alt="Matplotlib" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="Matplotlib">
+			<img src="assets/icons/scipy-logo.png" alt="SciPy" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="SciPy">
+			<img src="assets/icons/scikit-learn-logo.png" alt="scikit-learn" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="scikit-learn">
+			<img src="assets/icons/pytorch-logo.png" alt="PyTorch" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="PyTorch">
+			<img src="assets/icons/tensorflow-logo.png" alt="TensorFlow" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="TensorFlow">
+			<img src="assets/icons/weka-logo.png" alt="Weka" class="w-16 h-16 rounded-full object-contain fade-in-icon" title="Weka">
         </div>
       </div>
 
@@ -227,12 +234,41 @@
     <!-- Section Heading -->
     <h2 class="text-4xl font-bold text-center mb-2">Projects</h2>
     <hr class="border-gray-300 w-24 mx-auto mb-12">
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
 
+  <!-- View Full List -->
+  <a
+    href="https://polite-bush-06b91461e.6.azurestaticapps.net/index.html"
+    class="px-6 py-3 rounded-lg font-semibold text-white 
+    bg-gradient-to-r from-purple-500 to-indigo-500 
+    shadow-md 
+    hover:-translate-y-[3px] 
+    hover:shadow-[0_10px_25px_rgba(139,66,248,0.304)] 
+    transition duration-300 ease-out"
+  >
+    View Full List
+  </a>
+
+  <!-- GitHub Button -->
+  <a
+    href="https://github.com/KevinDacanay"
+    class="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white 
+    bg-gradient-to-r from-gray-800 to-gray-900 
+    shadow-md 
+    hover:-translate-y-[3px] 
+    hover:shadow-[0_10px_25px_rgba(0,0,0,0.35)] 
+    transition duration-300 ease-out"
+  >
+    <img src="assets/icons/github-logo.png" alt="GitHub" class="w-5 h-5">
+    View GitHub
+  </a>
+
+</div>
     <!-- Projects Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Project Card 1 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:-translate-y-[5px] hover:shadow-[0_10px_25px_rgba(139,66,248,0.304)] transition transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
         <h3 class="text-2xl font-semibold mb-2">KPad+ Text Editor</h3>
         <p class="text-gray-700 mb-4">A C++ text editor built using Qt, inspired by Notepad++.</p>
         <div class="flex flex-wrap justify-center gap-2 mb-4">
@@ -244,7 +280,7 @@
       </div>
 
       <!-- Project Card 2 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:-translate-y-[5px] hover:shadow-[0_10px_25px_rgba(139,66,248,0.304)] transition transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
         <h3 class="text-2xl font-semibold mb-2">Operating System</h3>
         <p class="text-gray-700 mb-4">Custom lightweight OS written in C++ and assembly.</p>
         <div class="flex flex-wrap justify-center gap-2 mb-4">
@@ -257,7 +293,7 @@
       </div>
 
       <!-- Project Card 3 -->
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:-translate-y-[5px] hover:shadow-[0_10px_25px_rgba(139,66,248,0.304)] transition transition transform duration-300 flex flex-col items-center text-center fade-in-icon">
         <h3 class="text-2xl font-semibold mb-2">E-Commerce Platform</h3>
         <p class="text-gray-700 mb-4">Django-based marketplace for university students.</p>
         <div class="flex flex-wrap justify-center gap-2 mb-4">
@@ -278,7 +314,6 @@
 <!-- ================= FOOTER ================= -->
 <footer id="contactme" class="bg-gradient-to-r from-blue-500 to-purple-900 text-white py-5">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <hr class="border-gray-400 mt-4">
 
     <!-- Footer Heading -->
     <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
@@ -299,9 +334,9 @@
 
     <!-- Footer Links -->
     <div class="flex justify-center gap-6 mb-6 text-gray-200">
-      <a href="#aboutme" class="hover:underline transition">About Me</a>
-      <a href="#skills" class="hover:underline transition">Skills</a>
-      <a href="#projects" class="hover:underline transition">Projects</a>
+      <a href="#aboutme" class="text-white font-bold hover:opacity-80 transition">About Me</a>
+      <a href="#skills" class="text-white font-bold hover:opacity-80 transition">Skills</a>
+      <a href="https://polite-bush-06b91461e.6.azurestaticapps.net/" class="text-white font-bold hover:opacity-80 transition">Projects</a>
     </div>
 
     <!-- Footer Copyright -->
